@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ca.nathanrochon.sschar.MainActivity">
+
+    <TextView
+        android:id="@+id/char_ATT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif"
+        android:text="2d4:18-20x2:+5"
+        android:textColor="@android:color/black"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toStartOf="@+id/inventoryBT"
+        app:layout_constraintTop_toBottomOf="@+id/char_AC" />
+
+    <TextView
+        android:id="@+id/charName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="112dp"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:background="@android:drawable/alert_light_frame"
+        android:fontFamily="sans-serif"
+        android:text="Thorn           lvl 2"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toStartOf="@+id/skillsBT"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_HP"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif"
+        android:text="HP"
+        android:textColor="@android:color/black"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toStartOf="@+id/char_HP"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/charName" />
+
+    <TextView
+        android:id="@+id/char_HP"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif"
+        android:text=" 21/21"
+        android:textColor="@android:color/black"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toStartOf="@+id/featsBt"
+        app:layout_constraintTop_toBottomOf="@+id/charName" />
+
+    <TextView
+        android:id="@+id/title_AC"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif"
+        android:text="AC"
+        android:textColor="@android:color/black"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toStartOf="@+id/char_AC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_HP" />
+
+    <TextView
+        android:id="@+id/char_AC"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif"
+        android:text="15"
+        android:textColor="@android:color/black"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toStartOf="@+id/spellsBT"
+        app:layout_constraintTop_toBottomOf="@+id/char_HP" />
+
+    <TextView
+        android:id="@+id/title_ATT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif"
+        android:text="ATT"
+        android:textColor="@android:color/black"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toStartOf="@+id/char_ATT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_AC" />
+
+    <Button
+        android:id="@+id/skillsBT"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Skills"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/featsBt"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Feats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/char_AC"
+        app:layout_constraintTop_toBottomOf="@+id/skillsBT" />
+
+    <Button
+        android:id="@+id/spellsBT"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Spells"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/char_ATT"
+        app:layout_constraintTop_toBottomOf="@+id/featsBt" />
+
+    <Button
+        android:id="@+id/inventoryBT"
+        android:layout_width="105dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Inventory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spellsBT" />
+
+</android.support.constraint.ConstraintLayout>
+
