@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ca.nathanrochon.ss_char.SkillsActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/SKT1"
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="ACROBATICS"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/SK1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/SK1"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:text="2"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/SKT2"
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="APPRAISE"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/SK2"
+                app:layout_constraintHorizontal_bias="0.812"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT1" />
+            <TextView
+                android:id="@+id/SK2"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:text="1"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK1" />
+
+            <TextView
+                android:id="@+id/SKT3"
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="BLUFF"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/SK3"
+                app:layout_constraintHorizontal_bias="0.812"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT2" />
+            <TextView
+                android:id="@+id/SK3"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:text="1"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK2" />
+
+            <TextView
+                android:id="@+id/SKT4"
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="CLIMB"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/SK4"
+                app:layout_constraintHorizontal_bias="0.812"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT3" />
+            <TextView
+                android:id="@+id/SK4"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:text="6"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK3" />
+
+            <TextView
+                android:id="@+id/SKT5"
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="CRAFT(WEAPONS)"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/SK5"
+                app:layout_constraintHorizontal_bias="0.812"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT4" />
+            <TextView
+                android:id="@+id/SK5"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:text="6"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK4" />
+
+            <TextView
+                android:id="@+id/SKT6"
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="CRAFT()"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/SK6"
+                app:layout_constraintHorizontal_bias="0.812"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT5" />
+            <TextView
+                android:id="@+id/SK6"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:text="1"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK5" />
+
+            <TextView
+                android:id="@+id/SKT7"
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="DIPLOMACY"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/SK7"
+                app:layout_constraintHorizontal_bias="0.812"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT6" />
+            <TextView
+                android:id="@+id/SK7"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:text="1"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK6" />
+
+            <TextView
+                android:id="@+id/SKT8"
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="DISABLE DEVICE"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/SK8"
+                app:layout_constraintHorizontal_bias="0.812"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT7" />
+            <TextView
+                android:id="@+id/SK8"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:text="2"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK7" />
+
+            <TextView
+                android:id="@+id/SKT9"
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="DISGUISE"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/SK9"
+                app:layout_constraintHorizontal_bias="0.812"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT8" />
+            <TextView
+                android:id="@+id/SK9"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:text="1"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK8" />
+
+            <TextView
+                android:id="@+id/SKT10"
+                android:layout_width="0dp"
+                android:layout_height="40sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="ESCAPE ARTIST"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/SK10"
+                app:layout_constraintHorizontal_bias="0.812"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT9" />
+            <TextView
+                android:id="@+id/SK10"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:text="1"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK9" />
+
+
+
+
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
