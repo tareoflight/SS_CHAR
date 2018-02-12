@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context="ca.nathanrochon.ss_char.SkillsActivity">
 
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -15,30 +16,556 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/Sk1_title"
-                android:layout_width="0dp"
-                android:layout_height="28dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:text="Acrobatics"
-                android:textSize="25sp"
-                app:layout_constraintEnd_toStartOf="@+id/sk1"
+                android:id="@+id/SKT1"
+                style="@style/textView_ST"
+                android:text="ACROBATICS"
+                app:layout_constraintEnd_toStartOf="@+id/SK1"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
             <TextView
-                android:id="@+id/sk1"
-                android:layout_width="80sp"
-                android:layout_height="30sp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginTop="8dp"
+                android:id="@+id/SK1"
+                style="@style/textView_ST"
                 android:text="2"
-                android:textSize="25sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-        </android.support.constraint.ConstraintLayout>
+            <TextView
+                android:id="@+id/SKT2"
+                style="@style/textView_ST"
+                android:text="APPRAISE"
+                app:layout_constraintEnd_toStartOf="@+id/SK2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT1" />
+            <TextView
+                android:id="@+id/SK2"
+                style="@style/textView_ST"
+                android:text="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK1" />
 
+            <TextView
+                android:id="@+id/SKT3"
+                style="@style/textView_ST"
+                android:text="BLUFF"
+                app:layout_constraintEnd_toStartOf="@+id/SK3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT2" />
+            <TextView
+                android:id="@+id/SK3"
+                style="@style/textView_ST"
+                android:text="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK2" />
+
+            <TextView
+                android:id="@+id/SKT4"
+                style="@style/textView_ST"
+                android:text="CLIMB"
+                app:layout_constraintEnd_toStartOf="@+id/SK4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT3" />
+            <TextView
+                android:id="@+id/SK4"
+                style="@style/textView_ST"
+                android:text="6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK3" />
+
+            <TextView
+                android:id="@+id/SKT5"
+                style="@style/textView_ST"
+                android:text="CRAFT(WEAPONS)"
+                app:layout_constraintEnd_toStartOf="@+id/SK5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT4" />
+            <TextView
+                android:id="@+id/SK5"
+                style="@style/textView_ST"
+                android:text="6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK4" />
+
+            <TextView
+                android:id="@+id/SKT6"
+                style="@style/textView_ST"
+                android:text="CRAFT()"
+                app:layout_constraintEnd_toStartOf="@+id/SK6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT5" />
+            <TextView
+                android:id="@+id/SK6"
+                style="@style/textView_ST"
+                android:text="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK5" />
+
+            <TextView
+                android:id="@+id/SKT7"
+                style="@style/textView_ST"
+                android:text="DIPLOMACY"
+                app:layout_constraintEnd_toStartOf="@+id/SK7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT6" />
+            <TextView
+                android:id="@+id/SK7"
+                style="@style/textView_ST"
+                android:text="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK6" />
+
+            <TextView
+                android:id="@+id/SKT8"
+                style="@style/textView_ST"
+                android:text="DISABLE DEVICE"
+                app:layout_constraintEnd_toStartOf="@+id/SK8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT7" />
+            <TextView
+                android:id="@+id/SK8"
+                style="@style/textView_ST"
+                android:text="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK7" />
+
+            <TextView
+                android:id="@+id/SKT9"
+                style="@style/textView_ST"
+                android:text="DISGUISE"
+                app:layout_constraintEnd_toStartOf="@+id/SK9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT8" />
+            <TextView
+                android:id="@+id/SK9"
+                style="@style/textView_ST"
+                android:text="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK8" />
+
+            <TextView
+                android:id="@+id/SKT10"
+                style="@style/textView_ST"
+                android:text="ESCAPE ARTIST"
+                app:layout_constraintEnd_toStartOf="@+id/SK10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT9" />
+            <TextView
+                android:id="@+id/SK10"
+                style="@style/textView_ST"
+                android:text="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK9" />
+
+            <TextView
+                android:id="@+id/SKT11"
+                style="@style/textView_ST"
+                android:text="FLY"
+                app:layout_constraintEnd_toStartOf="@+id/SK11"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT10"/>
+            <TextView
+                android:id="@+id/SK11"
+                style="@style/textView_ST"
+                android:text="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK10" />
+
+            <TextView
+                android:id="@+id/SKT12"
+                style="@style/textView_ST"
+                android:text="HANDLE ANIMAL"
+                app:layout_constraintEnd_toStartOf="@+id/SK12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT11" />
+            <TextView
+                android:id="@+id/SK12"
+                style="@style/textView_ST"
+                android:text="5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK11" />
+
+            <TextView
+                android:id="@+id/SKT13"
+                style="@style/textView_ST"
+                android:text="HEAL"
+                app:layout_constraintEnd_toStartOf="@+id/SK13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT12" />
+            <TextView
+                android:id="@+id/SK13"
+                style="@style/textView_ST"
+                android:text="-1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK12" />
+
+            <TextView
+                android:id="@+id/SKT14"
+                style="@style/textView_ST"
+                android:text="INTIMIDATE"
+                app:layout_constraintEnd_toStartOf="@+id/SK14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT13" />
+            <TextView
+                android:id="@+id/SK14"
+                style="@style/textView_ST"
+                android:text="6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK13" />
+
+            <TextView
+                android:id="@+id/SKT15"
+                style="@style/textView_ST"
+                android:text="KNOW(ARCANA)"
+                app:layout_constraintEnd_toStartOf="@+id/SK15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT14" />
+            <TextView
+                android:id="@+id/SK15"
+                style="@style/textView_ST"
+                android:text="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK14" />
+
+            <TextView
+                android:id="@+id/SKT16"
+                style="@style/textView_ST"
+                android:text="KNOW(DUNGEONEETING)"
+                app:layout_constraintEnd_toStartOf="@+id/SK16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT15" />
+            <TextView
+                android:id="@+id/SK16"
+                style="@style/textView_ST"
+                android:text="4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK15" />
+
+            <TextView
+                android:id="@+id/SKT17"
+                style="@style/textView_ST"
+                android:text="KNOW(ENGINEERING)"
+                app:layout_constraintEnd_toStartOf="@+id/SK17"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT16" />
+            <TextView
+                android:id="@+id/SK17"
+                style="@style/textView_ST"
+                android:text="4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK16" />
+
+            <TextView
+                android:id="@+id/SKT18"
+                style="@style/textView_ST"
+                android:text="KNOW(HISTORY)"
+                app:layout_constraintEnd_toStartOf="@+id/SK18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT17" />
+            <TextView
+                android:id="@+id/SK18"
+                style="@style/textView_ST"
+                android:text="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK17" />
+
+            <TextView
+                android:id="@+id/SKT19"
+                style="@style/textView_ST"
+                android:text="KNOW(GEOGRAPHY)"
+                app:layout_constraintEnd_toStartOf="@+id/SK19"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT18" />
+            <TextView
+                android:id="@+id/SK19"
+                style="@style/textView_ST"
+                android:text="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK18" />
+
+            <TextView
+                android:id="@+id/SKT20"
+                style="@style/textView_ST"
+                android:text="KNOW(HISOTRY)"
+                app:layout_constraintEnd_toStartOf="@+id/SK20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT19" />
+            <TextView
+                android:id="@+id/SK20"
+                style="@style/textView_ST"
+                android:text="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK19" />
+
+            <TextView
+                android:id="@+id/SKT21"
+                style="@style/textView_ST"
+                android:text="KNOW(LOCAL)"
+                app:layout_constraintEnd_toStartOf="@+id/SK21"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT20"/>
+            <TextView
+                android:id="@+id/SK21"
+                style="@style/textView_ST"
+                android:text="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK20" />
+
+            <TextView
+                android:id="@+id/SKT22"
+                style="@style/textView_ST"
+                android:text="KNOW(NATURE)"
+                app:layout_constraintEnd_toStartOf="@+id/SK22"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT21" />
+            <TextView
+                android:id="@+id/SK22"
+                style="@style/textView_ST"
+                android:text="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK21" />
+
+            <TextView
+                android:id="@+id/SKT23"
+                style="@style/textView_ST"
+                android:text="KNOW(NOBILITY)"
+                app:layout_constraintEnd_toStartOf="@+id/SK23"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT22" />
+            <TextView
+                android:id="@+id/SK23"
+                style="@style/textView_ST"
+                android:text="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK22" />
+
+            <TextView
+                android:id="@+id/SKT24"
+                style="@style/textView_ST"
+                android:text="KNOW(PLANES)"
+                app:layout_constraintEnd_toStartOf="@+id/SK24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT23" />
+            <TextView
+                android:id="@+id/SK24"
+                style="@style/textView_ST"
+                android:text="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK23" />
+
+            <TextView
+                android:id="@+id/SKT25"
+                style="@style/textView_ST"
+                android:text="KNOW(RELIGOIN)"
+                app:layout_constraintEnd_toStartOf="@+id/SK25"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT24" />
+            <TextView
+                android:id="@+id/SK25"
+                style="@style/textView_ST"
+                android:text="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK24" />
+
+            <TextView
+                android:id="@+id/SKT26"
+                style="@style/textView_ST"
+                android:text="LINGUISTICS"
+                app:layout_constraintEnd_toStartOf="@+id/SK26"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT25" />
+            <TextView
+                android:id="@+id/SK26"
+                style="@style/textView_ST"
+                android:text="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK25" />
+
+            <TextView
+                android:id="@+id/SKT27"
+                style="@style/textView_ST"
+                android:text="PERCEPTION"
+                app:layout_constraintEnd_toStartOf="@+id/SK27"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT26" />
+            <TextView
+                android:id="@+id/SK27"
+                style="@style/textView_ST"
+                android:text="-1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK26" />
+
+            <TextView
+                android:id="@+id/SKT28"
+                style="@style/textView_ST"
+                android:text="PERFORM()"
+                app:layout_constraintEnd_toStartOf="@+id/SK28"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT27" />
+            <TextView
+                android:id="@+id/SK28"
+                style="@style/textView_ST"
+                android:text="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK27" />
+
+            <TextView
+                android:id="@+id/SKT29"
+                style="@style/textView_ST"
+                android:text="PERFORM()"
+                app:layout_constraintEnd_toStartOf="@+id/SK29"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT28" />
+            <TextView
+                android:id="@+id/SK29"
+                style="@style/textView_ST"
+                android:text="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK28" />
+
+            <TextView
+                android:id="@+id/SKT30"
+                style="@style/textView_ST"
+                android:text="PROFESSION(TRAPPER)"
+                app:layout_constraintEnd_toStartOf="@+id/SK30"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT29" />
+            <TextView
+                android:id="@+id/SK30"
+                style="@style/textView_ST"
+                android:text="3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK29" />
+
+            <TextView
+                android:id="@+id/SKT31"
+                style="@style/textView_ST"
+                android:text="PROFESSION()"
+                app:layout_constraintEnd_toStartOf="@+id/SK31"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT30" />
+            <TextView
+                android:id="@+id/SK31"
+                style="@style/textView_ST"
+                android:text="-1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK30" />
+
+            <TextView
+                android:id="@+id/SKT32"
+                style="@style/textView_ST"
+                android:text="RIDE"
+                app:layout_constraintEnd_toStartOf="@+id/SK32"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT31" />
+            <TextView
+                android:id="@+id/SK32"
+                style="@style/textView_ST"
+                android:text="5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK31" />
+
+            <TextView
+                android:id="@+id/SKT33"
+                style="@style/textView_ST"
+                android:text="SENSE MOTIVE"
+                app:layout_constraintEnd_toStartOf="@+id/SK33"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT32" />
+            <TextView
+                android:id="@+id/SK33"
+                style="@style/textView_ST"
+                android:text="-1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK32" />
+
+            <TextView
+                android:id="@+id/SKT34"
+                style="@style/textView_ST"
+                android:text="SLEIGHT OF HAND"
+                app:layout_constraintEnd_toStartOf="@+id/SK34"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT33" />
+            <TextView
+                android:id="@+id/SK34"
+                style="@style/textView_ST"
+                android:text="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK33" />
+
+            <TextView
+                android:id="@+id/SKT35"
+                style="@style/textView_ST"
+                android:text="SPELLCRAFT"
+                app:layout_constraintEnd_toStartOf="@+id/SK35"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT34" />
+            <TextView
+                android:id="@+id/SK35"
+                style="@style/textView_ST"
+                android:text="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK34" />
+
+            <TextView
+                android:id="@+id/SKT36"
+                style="@style/textView_ST"
+                android:text="STEALTH"
+                app:layout_constraintEnd_toStartOf="@+id/SK36"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT35" />
+            <TextView
+                android:id="@+id/SK36"
+                style="@style/textView_ST"
+                android:text="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK35" />
+
+            <TextView
+                android:id="@+id/SKT37"
+                style="@style/textView_ST"
+                android:text="SURVIVAL"
+                app:layout_constraintEnd_toStartOf="@+id/SK37"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT36" />
+            <TextView
+                android:id="@+id/SK37"
+                style="@style/textView_ST"
+                android:text="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK36" />
+
+            <TextView
+                android:id="@+id/SKT38"
+                style="@style/textView_ST"
+                android:text="SWIM"
+                app:layout_constraintEnd_toStartOf="@+id/SK38"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT37" />
+            <TextView
+                android:id="@+id/SK38"
+                style="@style/textView_ST"
+                android:text="5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK37" />
+
+            <TextView
+                android:id="@+id/SKT39"
+                style="@style/textView_ST"
+                android:text="USE MAGIC DEVICE"
+                app:layout_constraintEnd_toStartOf="@+id/SK39"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SKT38" />
+            <TextView
+                android:id="@+id/SK39"
+                style="@style/textView_ST"
+                android:text="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SK38" />
+
+
+
+
+
+        </android.support.constraint.ConstraintLayout>
     </ScrollView>
+
 </android.support.constraint.ConstraintLayout>
