@@ -9,27 +9,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
-
-    <TextView
-        android:id="@+id/skillName"
-        style="@style/textView_ST"
-        android:textAlignment="center"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <TextView
-        android:id="@+id/skillRankT"
-        style="@style/textView_STPOP"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:text="RANK"
-        app:layout_constraintEnd_toStartOf="@+id/skillRank"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/skillName" />
+        <TextView
+            android:id="@+id/skillRankT"
+            style="@style/textView_STPOP"
+            android:text="RANK"
+            app:layout_constraintEnd_toStartOf="@+id/skillRank"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/skillRank"
@@ -39,7 +25,8 @@
         android:inputType="number"
         android:text="0"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/skillName" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <TextView
         android:id="@+id/skillClassBT"
