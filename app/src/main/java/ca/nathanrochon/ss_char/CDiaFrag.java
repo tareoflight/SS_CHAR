@@ -38,6 +38,8 @@ public class CDiaFrag extends DialogFragment {
         ((EditText)inlat.findViewById(R.id.skillItem)).setText(data.getInt("Item",4)+"");
         ((EditText)inlat.findViewById(R.id.skillMisc)).setText(data.getInt("Misc",5)+"");
         ((EditText)inlat.findViewById(R.id.skillArmor)).setText(data.getInt("Armor",6)+"");
+        ((TextView)inlat.findViewById(R.id.skillABILT)).setText("ABILITY("+data.getString("ABILHINT","")+")");
+
         final TextView totaler= (TextView) clicker;
                 B.setView(inlat)
                 .setPositiveButton("Save", new DialogInterface.OnClickListener() {
@@ -45,26 +47,26 @@ public class CDiaFrag extends DialogFragment {
                     public void onClick(DialogInterface dialogInterface, int i) {
                         int tt;
                         SharedPreferences.Editor saver = data.edit();
-                        tt=Integer.parseInt(((EditText)inlat.findViewById(R.id.skillRank)).getText().toString());
-                        saver.putInt("Rank",Integer.parseInt(((EditText)inlat.findViewById(R.id.skillRank)).getText().toString()));
-                        tt+=Integer.parseInt(((EditText)inlat.findViewById(R.id.skillClassB)).getText().toString());
-                        saver.putInt("ClassB",Integer.parseInt(((EditText)inlat.findViewById(R.id.skillClassB)).getText().toString()));
-                        tt+=Integer.parseInt(((EditText)inlat.findViewById(R.id.skillABIL)).getText().toString());
-                        saver.putInt("ABIL",Integer.parseInt(((EditText)inlat.findViewById(R.id.skillABIL)).getText().toString()));
-                        tt+=Integer.parseInt(((EditText)inlat.findViewById(R.id.skillRace)).getText().toString());
-                        saver.putInt("Race",Integer.parseInt(((EditText)inlat.findViewById(R.id.skillRace)).getText().toString()));
-                        tt+=Integer.parseInt(((EditText)inlat.findViewById(R.id.skillFeat)).getText().toString());
-                        saver.putInt("Feat",Integer.parseInt(((EditText)inlat.findViewById(R.id.skillFeat)).getText().toString()));
-                        tt+=Integer.parseInt(((EditText)inlat.findViewById(R.id.skillItem)).getText().toString());
-                        saver.putInt("Item",Integer.parseInt(((EditText)inlat.findViewById(R.id.skillItem)).getText().toString()));
-                        tt+=Integer.parseInt(((EditText)inlat.findViewById(R.id.skillMisc)).getText().toString());
-                        saver.putInt("Misc",Integer.parseInt(((EditText)inlat.findViewById(R.id.skillMisc)).getText().toString()));
-                        tt+=Integer.parseInt(((EditText)inlat.findViewById(R.id.skillArmor)).getText().toString());
-                        saver.putInt("Armor",Integer.parseInt(((EditText)inlat.findViewById(R.id.skillArmor)).getText().toString()));
+                        tt=Integer.parseInt(nullcetch((((EditText)inlat.findViewById(R.id.skillRank)).getText().toString())));
+                        saver.putInt("Rank",Integer.parseInt(nullcetch(((EditText)inlat.findViewById(R.id.skillRank)).getText().toString())));
+                        tt+=Integer.parseInt(nullcetch(((EditText)inlat.findViewById(R.id.skillClassB)).getText().toString()));
+                        saver.putInt("ClassB",Integer.parseInt(nullcetch(((EditText)inlat.findViewById(R.id.skillClassB)).getText().toString())));
+                        tt+=Integer.parseInt(nullcetch(((EditText)inlat.findViewById(R.id.skillABIL)).getText().toString()));
+                        saver.putInt("ABIL",Integer.parseInt(nullcetch(((EditText)inlat.findViewById(R.id.skillABIL)).getText().toString())));
+                        tt+=Integer.parseInt(nullcetch(((EditText)inlat.findViewById(R.id.skillRace)).getText().toString()));
+                        saver.putInt("Race",Integer.parseInt(nullcetch(((EditText)inlat.findViewById(R.id.skillRace)).getText().toString())));
+                        tt+=Integer.parseInt(nullcetch(((EditText)inlat.findViewById(R.id.skillFeat)).getText().toString()));
+                        saver.putInt("Feat",Integer.parseInt(nullcetch(((EditText)inlat.findViewById(R.id.skillFeat)).getText().toString())));
+                        tt+=Integer.parseInt(nullcetch(((EditText)inlat.findViewById(R.id.skillItem)).getText().toString()));
+                        saver.putInt("Item",Integer.parseInt(nullcetch(((EditText)inlat.findViewById(R.id.skillItem)).getText().toString())));
+                        tt+=Integer.parseInt(nullcetch(((EditText)inlat.findViewById(R.id.skillMisc)).getText().toString()));
+                        saver.putInt("Misc",Integer.parseInt(nullcetch(((EditText)inlat.findViewById(R.id.skillMisc)).getText().toString())));
+                        tt+=Integer.parseInt(nullcetch(((EditText)inlat.findViewById(R.id.skillArmor)).getText().toString()));
+                        saver.putInt("Armor",Integer.parseInt(nullcetch(((EditText)inlat.findViewById(R.id.skillArmor)).getText().toString())));
                         saver.putInt("Total",tt);
                         saver.commit();
                         total=tt;
-                        totaler.setText(total+"");
+                        totaler.setText(tt+"");
                     }
                 })
                 .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -90,7 +92,9 @@ public class CDiaFrag extends DialogFragment {
         this.name = name;
 
     }
-
+    public String nullcetch(String i){
+        return i.equals("")?"0":i;
+    }
     public void setClicker(View v) {
         clicker = v;
     }

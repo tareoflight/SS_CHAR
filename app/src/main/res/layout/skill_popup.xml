@@ -26,6 +26,7 @@
         android:text="0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:selectAllOnFocus="true"
         />
 
     <TextView
@@ -46,7 +47,8 @@
         android:inputType="numberSigned"
         android:text="0"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/skillRank" />
+        app:layout_constraintTop_toBottomOf="@+id/skillRank"
+        android:selectAllOnFocus="true"/>
     <TextView
         android:id="@+id/skillABILT"
         style="@style/textView_STPOP"
@@ -55,7 +57,8 @@
         android:text="ABILITY"
         app:layout_constraintEnd_toStartOf="@+id/skillRank"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/skillClassB" />
+        app:layout_constraintTop_toBottomOf="@+id/skillClassB"
+        />
 
     <EditText
         android:id="@+id/skillABIL"
@@ -65,7 +68,8 @@
         android:inputType="numberSigned"
         android:text="0"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/skillClassB" />
+        app:layout_constraintTop_toBottomOf="@+id/skillClassB"
+        android:selectAllOnFocus="true"/>
     <TextView
         android:id="@+id/skillRaceT"
         style="@style/textView_STPOP"
@@ -84,7 +88,8 @@
         android:inputType="numberSigned"
         android:text="0"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/skillABIL" />
+        app:layout_constraintTop_toBottomOf="@+id/skillABIL"
+        android:selectAllOnFocus="true"/>
     <TextView
         android:id="@+id/skillFeatT"
         style="@style/textView_STPOP"
@@ -93,7 +98,8 @@
         android:text="FEAT"
         app:layout_constraintEnd_toStartOf="@+id/skillRank"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/skillRace" />
+        app:layout_constraintTop_toBottomOf="@+id/skillRace"
+        />
 
     <EditText
         android:id="@+id/skillFeat"
@@ -103,7 +109,8 @@
         android:inputType="numberSigned"
         android:text="0"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/skillRace" />
+        app:layout_constraintTop_toBottomOf="@+id/skillRace"
+        android:selectAllOnFocus="true"/>
     <TextView
         android:id="@+id/skillItemT"
         style="@style/textView_STPOP"
@@ -122,7 +129,8 @@
         android:inputType="numberSigned"
         android:text="0"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/skillFeat" />
+        app:layout_constraintTop_toBottomOf="@+id/skillFeat"
+        android:selectAllOnFocus="true"/>
     <TextView
         android:id="@+id/skillMiscT"
         style="@style/textView_STPOP"
@@ -141,7 +149,8 @@
         android:inputType="numberSigned"
         android:text="0"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/skillItem" />
+        app:layout_constraintTop_toBottomOf="@+id/skillItem"
+        android:selectAllOnFocus="true"/>
     <TextView
         android:id="@+id/skillArmorT"
         style="@style/textView_STPOP"
@@ -160,6 +169,7 @@
         android:inputType="numberSigned"
         android:text="-1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/skillMisc" />
+        app:layout_constraintTop_toBottomOf="@+id/skillMisc"
+        android:selectAllOnFocus="true"/>
     </android.support.constraint.ConstraintLayout>
 </ScrollView>

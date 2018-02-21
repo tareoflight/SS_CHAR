@@ -89,7 +89,7 @@
                 style="@style/textView_ST"
                 android:labelFor="@id/SK5"
                 android:onClick="onSkillClick"
-                android:text="CRAFT(WEAPONS)"
+                android:text="CRAFT1"
                 app:layout_constraintEnd_toStartOf="@+id/SK5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/SKT4" />
@@ -106,7 +106,7 @@
                 style="@style/textView_ST"
                 android:labelFor="@id/SK6"
                 android:onClick="onSkillClick"
-                android:text="CRAFT()"
+                android:text="CRAFT2"
                 app:layout_constraintEnd_toStartOf="@+id/SK6"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/SKT5" />
@@ -481,7 +481,7 @@
                 style="@style/textView_ST"
                 android:labelFor="@id/SK28"
                 android:onClick="onSkillClick"
-                android:text="PERFORM()"
+                android:text="PERFORM1"
                 app:layout_constraintEnd_toStartOf="@+id/SK28"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/SKT27" />
@@ -498,7 +498,7 @@
                 style="@style/textView_ST"
                 android:labelFor="@id/SK29"
                 android:onClick="onSkillClick"
-                android:text="PERFORM()"
+                android:text="PERFORM2"
                 app:layout_constraintEnd_toStartOf="@+id/SK29"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/SKT28" />
@@ -515,7 +515,7 @@
                 style="@style/textView_ST"
                 android:labelFor="@id/SK30"
                 android:onClick="onSkillClick"
-                android:text="PROFESSION(TRAPPER)"
+                android:text="PROFESSION1"
                 app:layout_constraintEnd_toStartOf="@+id/SK30"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/SKT29" />
@@ -533,7 +533,7 @@
 
                 android:labelFor="@id/SK31"
                 android:onClick="onSkillClick"
-                android:text="PROFESSION()"
+                android:text="PROFESSION2"
                 app:layout_constraintEnd_toStartOf="@+id/SK31"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/SKT30" />

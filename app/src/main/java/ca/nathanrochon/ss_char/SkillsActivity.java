@@ -4,6 +4,7 @@ import android.app.DialogFragment;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -85,6 +86,7 @@ public class SkillsActivity extends AppCompatActivity {
        TextView v = findViewById(findViewById(ParentID).getLabelFor());
         SharedPreferences data = getSharedPreferences("ss_char."+((TextView)findViewById(ParentID)).getText().toString(), 0);
         v.setText(data.getInt("Total",99)+"");
+        //Log.i("list",((TextView)findViewById(ParentID)).getText().toString());
 
     }
 }
