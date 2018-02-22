@@ -19,6 +19,7 @@ public class CDiaFrag extends DialogFragment {
     String name;
     View clicker;
     int total;
+    private boolean edit =false;
 
     @Override
     public Dialog onCreateDialog(Bundle bundle){
@@ -30,14 +31,14 @@ public class CDiaFrag extends DialogFragment {
         final View inlat = F.inflate(R.layout.skill_popup,null);
         final SharedPreferences data = getActivity().getSharedPreferences("ss_char."+name, 0);
 
-        ((EditText)inlat.findViewById(R.id.skillRank)).setText(data.getInt("Rank",2)+"");
-        ((EditText)inlat.findViewById(R.id.skillClassB)).setText(data.getInt("ClassB",1)+"");
-        ((EditText)inlat.findViewById(R.id.skillABIL)).setText(data.getInt("ABIL",2)+"");
-        ((EditText)inlat.findViewById(R.id.skillRace)).setText(data.getInt("Race",2)+"");
-        ((EditText)inlat.findViewById(R.id.skillFeat)).setText(data.getInt("Feat",3)+"");
-        ((EditText)inlat.findViewById(R.id.skillItem)).setText(data.getInt("Item",4)+"");
-        ((EditText)inlat.findViewById(R.id.skillMisc)).setText(data.getInt("Misc",5)+"");
-        ((EditText)inlat.findViewById(R.id.skillArmor)).setText(data.getInt("Armor",6)+"");
+        ((EditText)inlat.findViewById(R.id.skillRank)).setText(data.getInt("Rank",0)+"");
+        ((EditText)inlat.findViewById(R.id.skillClassB)).setText(data.getInt("ClassB",0)+"");
+        ((EditText)inlat.findViewById(R.id.skillABIL)).setText(data.getInt("ABIL",0)+"");
+        ((EditText)inlat.findViewById(R.id.skillRace)).setText(data.getInt("Race",0)+"");
+        ((EditText)inlat.findViewById(R.id.skillFeat)).setText(data.getInt("Feat",0)+"");
+        ((EditText)inlat.findViewById(R.id.skillItem)).setText(data.getInt("Item",0)+"");
+        ((EditText)inlat.findViewById(R.id.skillMisc)).setText(data.getInt("Misc",0)+"");
+        ((EditText)inlat.findViewById(R.id.skillArmor)).setText(data.getInt("Armor",0)+"");
         ((TextView)inlat.findViewById(R.id.skillABILT)).setText("ABILITY("+data.getString("ABILHINT","")+")");
 
         final TextView totaler= (TextView) clicker;
@@ -76,6 +77,33 @@ public class CDiaFrag extends DialogFragment {
 
                     }
                 });
+                if(data.getBoolean("Sub",false)) {
+                    B.setNeutralButton("Edit", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            final AlertDialog.Builder ad = new AlertDialog.Builder(getContext());
+                            final EditText input = new EditText(getContext());
+                            ad.setTitle("Edit Skill");
+                            ad.setView(input);
+                            ad.setPositiveButton("Save", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+
+                                    ((TextView) clicker).setText(((TextView) clicker).getText() + "(" + input.getText() + ")");
+                                    Log.i("Skill Editor","ss_char." +name);
+                                    SharedPreferences.Editor newdata;
+                                    newdata = getActivity().getSharedPreferences("ss_char." + name + "(" + input.getText().toString() + ")", 0).edit();
+                                    newdata.putBoolean("Sub", data.getBoolean("Sub", false));
+                                    newdata.putString("ABILHINT", data.getString("ABILHINT", "ERR"));
+                                    newdata.commit();
+
+                                }
+                            })
+                                    .setNegativeButton("Cancel", null);
+                            ad.show();
+                        }
+                    });
+                }
 
 
 
@@ -97,5 +125,9 @@ public class CDiaFrag extends DialogFragment {
     }
     public void setClicker(View v) {
         clicker = v;
+    }
+
+    public void addEdit() {
+        edit =true;
     }
 }

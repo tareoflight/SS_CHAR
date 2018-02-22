@@ -74,6 +74,10 @@ public class SkillsActivity extends AppCompatActivity {
 
         ((CDiaFrag)nF).setName(name);
         ((CDiaFrag)nF).setClicker(findViewById(v.getLabelFor()));
+        SharedPreferences data = getSharedPreferences("ss_char."+name, 0);
+        if(!data.getBoolean("Sub",false)){
+            ((CDiaFrag)nF).addEdit();
+        }
         nF.show(getFragmentManager(),"yep");
 
     }
@@ -85,6 +89,9 @@ public class SkillsActivity extends AppCompatActivity {
     private void load(int ParentID){
        TextView v = findViewById(findViewById(ParentID).getLabelFor());
         SharedPreferences data = getSharedPreferences("ss_char."+((TextView)findViewById(ParentID)).getText().toString(), 0);
+        if(!data.getBoolean("Sub",false)){
+
+        }
         v.setText(data.getInt("Total",99)+"");
         //Log.i("list",((TextView)findViewById(ParentID)).getText().toString());
 
