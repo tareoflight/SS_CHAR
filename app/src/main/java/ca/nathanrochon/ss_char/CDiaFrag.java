@@ -88,14 +88,7 @@ public class CDiaFrag extends DialogFragment {
                             ad.setPositiveButton("Save", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
-
-                                    ((TextView) clicker).setText(((TextView) clicker).getText() + "(" + input.getText() + ")");
-                                    Log.i("Skill Editor","ss_char." +name);
-                                    SharedPreferences.Editor newdata;
-                                    newdata = getActivity().getSharedPreferences("ss_char." + name + "(" + input.getText().toString() + ")", 0).edit();
-                                    newdata.putBoolean("Sub", data.getBoolean("Sub", false));
-                                    newdata.putString("ABILHINT", data.getString("ABILHINT", "ERR"));
-                                    newdata.commit();
+Log.i("TODO", "edit subclass stuff");
 
                                 }
                             })
