@@ -69,10 +69,7 @@ public class SkillsActivity extends AppCompatActivity {
     public void onSkillClick(View v){
         DialogFragment nF = new CDiaFrag();
         String name =((TextView)v).getText().toString();
-
-
-
-        ((CDiaFrag)nF).setName(name);
+        ((CDiaFrag)nF).setID(v.getId());
         ((CDiaFrag)nF).setClicker(findViewById(v.getLabelFor()));
         SharedPreferences data = getSharedPreferences("ss_char."+name, 0);
         if(!data.getBoolean("Sub",false)){
@@ -87,11 +84,10 @@ public class SkillsActivity extends AppCompatActivity {
     }
 
     private void load(int ParentID){
-       TextView v = findViewById(findViewById(ParentID).getLabelFor());
-        SharedPreferences data = getSharedPreferences("ss_char."+((TextView)findViewById(ParentID)).getText().toString(), 0);
-        if(!data.getBoolean("Sub",false)){
-
-        }
+        TextView pv = findViewById(ParentID);
+        TextView v = findViewById(findViewById(ParentID).getLabelFor());
+        SharedPreferences data = getSharedPreferences("ss_char."+ParentID, 0);
+        pv.setText(data.getString("NAME","UNHANDLED"));
         v.setText(data.getInt("Total",99)+"");
         //Log.i("list",((TextView)findViewById(ParentID)).getText().toString());
 

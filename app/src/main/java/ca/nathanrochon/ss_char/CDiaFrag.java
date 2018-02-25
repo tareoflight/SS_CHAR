@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 public class CDiaFrag extends DialogFragment {
 
-    String name;
+    int id;
     View clicker;
     int total;
     private boolean edit =false;
@@ -29,7 +29,7 @@ public class CDiaFrag extends DialogFragment {
         AlertDialog.Builder B = new AlertDialog.Builder(getActivity());
         final LayoutInflater F = getActivity().getLayoutInflater();
         final View inlat = F.inflate(R.layout.skill_popup,null);
-        final SharedPreferences data = getActivity().getSharedPreferences("ss_char."+name, 0);
+        final SharedPreferences data = getActivity().getSharedPreferences("ss_char."+id, 0);
 
         ((EditText)inlat.findViewById(R.id.skillRank)).setText(data.getInt("Rank",0)+"");
         ((EditText)inlat.findViewById(R.id.skillClassB)).setText(data.getInt("ClassB",0)+"");
@@ -40,7 +40,7 @@ public class CDiaFrag extends DialogFragment {
         ((EditText)inlat.findViewById(R.id.skillMisc)).setText(data.getInt("Misc",0)+"");
         ((EditText)inlat.findViewById(R.id.skillArmor)).setText(data.getInt("Armor",0)+"");
         ((TextView)inlat.findViewById(R.id.skillABILT)).setText("ABILITY("+data.getString("ABILHINT","")+")");
-
+        final TextView name = (TextView)getActivity().findViewById(id);
         final TextView totaler= (TextView) clicker;
                 B.setView(inlat)
                 .setPositiveButton("Save", new DialogInterface.OnClickListener() {
@@ -73,11 +73,11 @@ public class CDiaFrag extends DialogFragment {
                 .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Log.i("skill"+name+" popup: ","Cancel");
+                        Log.i("skill"+((TextView)getActivity().findViewById(id)).getText()+" popup: ","Cancel");
 
                     }
                 });
-                if(data.getBoolean("Sub",false)) {
+                if(!data.getString("Sub","").isEmpty()) {
                     B.setNeutralButton("Edit", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
@@ -88,8 +88,10 @@ public class CDiaFrag extends DialogFragment {
                             ad.setPositiveButton("Save", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
-Log.i("TODO", "edit subclass stuff");
-
+                                   SharedPreferences.Editor ed = data.edit();
+                                   String newname =data.getString("Sub","UN")+"("+input.getText()+")";
+                                   ed.putString("NAME",newname).commit();
+                                    name.setText(newname);
                                 }
                             })
                                     .setNegativeButton("Cancel", null);
@@ -100,7 +102,7 @@ Log.i("TODO", "edit subclass stuff");
 
 
 
-        B.setTitle(name);
+        B.setTitle(((TextView)getActivity().findViewById(id)).getText());
         AlertDialog output = B.create();
 
 
@@ -109,10 +111,6 @@ Log.i("TODO", "edit subclass stuff");
 
     }
 
-    public void setName(String name){
-        this.name = name;
-
-    }
     public String nullcetch(String i){
         return i.equals("")?"0":i;
     }
@@ -122,5 +120,9 @@ Log.i("TODO", "edit subclass stuff");
 
     public void addEdit() {
         edit =true;
+    }
+
+    public void setID(int id) {
+        this.id = id;
     }
 }
