@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/skillRankT"
+            style="@style/textView_STPOP"
+            android:text="RANK"
+            app:layout_constraintEnd_toStartOf="@+id/skillRank"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/skillRank"
+        style="@style/textView_STPOP"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:selectAllOnFocus="true"
+        />
+
+    <TextView
+        android:id="@+id/skillClassBT"
+        style="@style/textView_STPOP"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="CLASS"
+        app:layout_constraintEnd_toStartOf="@+id/skillRank"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skillRank" />
+
+    <EditText
+        android:id="@+id/skillClassB"
+        style="@style/textView_STPOP"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skillRank"
+        android:selectAllOnFocus="true"/>
+    <TextView
+        android:id="@+id/skillABILT"
+        style="@style/textView_STPOP"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="ABILITY"
+        app:layout_constraintEnd_toStartOf="@+id/skillRank"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skillClassB"
+        />
+
+    <EditText
+        android:id="@+id/skillABIL"
+        style="@style/textView_STPOP"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skillClassB"
+        android:selectAllOnFocus="true"/>
+    <TextView
+        android:id="@+id/skillRaceT"
+        style="@style/textView_STPOP"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="RACE"
+        app:layout_constraintEnd_toStartOf="@+id/skillRank"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skillABIL" />
+
+    <EditText
+        android:id="@+id/skillRace"
+        style="@style/textView_STPOP"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skillABIL"
+        android:selectAllOnFocus="true"/>
+    <TextView
+        android:id="@+id/skillFeatT"
+        style="@style/textView_STPOP"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="FEAT"
+        app:layout_constraintEnd_toStartOf="@+id/skillRank"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skillRace"
+        />
+
+    <EditText
+        android:id="@+id/skillFeat"
+        style="@style/textView_STPOP"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skillRace"
+        android:selectAllOnFocus="true"/>
+    <TextView
+        android:id="@+id/skillItemT"
+        style="@style/textView_STPOP"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="ITEM"
+        app:layout_constraintEnd_toStartOf="@+id/skillRank"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skillFeat" />
+
+    <EditText
+        android:id="@+id/skillItem"
+        style="@style/textView_STPOP"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skillFeat"
+        android:selectAllOnFocus="true"/>
+    <TextView
+        android:id="@+id/skillMiscT"
+        style="@style/textView_STPOP"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="MISC"
+        app:layout_constraintEnd_toStartOf="@+id/skillRank"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skillItem" />
+
+    <EditText
+        android:id="@+id/skillMisc"
+        style="@style/textView_STPOP"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skillItem"
+        android:selectAllOnFocus="true"/>
+    <TextView
+        android:id="@+id/skillArmorT"
+        style="@style/textView_STPOP"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="ARMOR"
+        app:layout_constraintEnd_toStartOf="@+id/skillRank"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skillMisc" />
+
+    <EditText
+        android:id="@+id/skillArmor"
+        style="@style/textView_STPOP"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:text="-1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skillMisc"
+        android:selectAllOnFocus="true"/>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
