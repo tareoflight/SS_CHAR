@@ -18,7 +18,8 @@
         android:textColor="@android:color/black"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/char_AC" />
+        app:layout_constraintTop_toBottomOf="@+id/char_AC"
+         />
 
     <TextView
         android:id="@+id/charName"
@@ -35,7 +36,8 @@
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onCoreClick"/>
 
     <TextView
         android:id="@+id/title_HP"
